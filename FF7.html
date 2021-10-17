@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./ff7/reset.css">
+  <link rel="stylesheet" href="./ff7/style.css">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+
+    .container {
+      width: 75%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .h-100 {
+      height: 100%;
+    }
+
+    .header {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .bg {
+      background: url("./ff7/bg-full.jpg")center center/cover;
+      position: relative;
+      filter: brightness(0.4);
+
+    }
+
+    .information {
+      width: 1600px;
+      height: 800px;
+      border: 1px solid rgb(180, 180, 180);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .product-bg {
+      border: 1px transparent rgba(0, 0, 0, 0);
+      width: 870px;
+      height: 800px;
+      background: url("./ff7/main.jpg")no-repeat center center;
+      position: relative;
+      left: 0%;
+      filter: brightness(0.4);
+    }
+
+    .cd img {
+      width: 15%;
+      position: absolute;
+      top: 10%;
+      left: 20%;
+    }
+
+    .text1 {
+      width: 400px;
+      height: 50px;
+      border: 1px transparent white;
+      position: absolute;
+      top: 60%;
+      left: 15%;
+      text-align: center;
+      color: white;
+      font-size: 48px;
+    }
+
+    .text2 {
+      width: 600px;
+      height: 400px;
+      border: 1px transparent white;
+      position: absolute;
+      top: 70%;
+      left: 8%;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+    }
+
+    .Cloud-info {
+      background: rgb(180, 180, 180);
+      height: 50%;
+      width: 46%;
+      box-sizing: border-box;
+      right: 0;
+      top: 0;
+      position: absolute;
+    }
+
+    .Cloud-picture img {
+      width: 50%;
+      position: absolute;
+      top: 0%;
+      right: 0;
+    }
+
+    .Cloud-text1 {
+      width: 200px;
+      height: 50px;
+      border: 1px transparent white;
+      position: absolute;
+      top: 25%;
+      left: 3%;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      font-size: 48px;
+    }
+
+    .Cloud-text2 {
+      width: 400px;
+      height: 200px;
+      border: 1px transparent white;
+      position: absolute;
+      top: 40%;
+      left: 3%;
+      text-align: left;
+      color: black;
+      font-size: 24px;
+    }
+
+    .Tifa-info {
+      background: rgb(0, 0, 0);
+      height: 50%;
+      width: 46%;
+      box-sizing: border-box;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+
+    .Tifa-picture img {
+      width: 48%;
+      position: absolute;
+      bottom: 0%;
+      right: 51%;
+
+    }
+
+    .Tifa-text1 {
+      width: 200px;
+      height: 50px;
+      border: 1px transparent white;
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      text-align: left;
+      color: white;
+      font-size: 48px;
+    }
+
+    .Tifa-text2 {
+      width: 400px;
+      height: 200px;
+      border: 1px transparent white;
+      position: absolute;
+      bottom: 15%;
+      left: 45%;
+      text-align: left;
+      color: white;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <div class="bg h-100"></div>
+    <div class="information">
+      <div class="product-bg"></div>
+      <div class="cd"><img src="./ff7/ps4-ff7.png"></div>
+      <div class="text1">AVAILABLE NOW</div>
+      <div class="text2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem magni sint repellat laborum
+        eius animi labore
+        delectus saepe molestias expedita! Vel laudantium, perferendis mollitia rerum excepturi dolores delectus ipsam
+        officia?</div>
+
+      <div class="Cloud-info">
+        <div class="Cloud-picture"><img src="./ff7/cloud.png"></div>
+        <div class="Cloud-text1">Cloud</div>
+        <div class="Cloud-text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex earum, sunt velit labore
+          quia nemo voluptates
+          aspernatur fuga repudiandae beatae laudantium quas esse at maxime voluptas dolore. Reprehenderit, atque
+          deserunt.
+        </div>
+      </div>
+
+      <div class="Tifa-info">
+        <div class="Tifa-picture"><img src="./ff7/tifa.png"></div>
+        <div class="Tifa-text1">Tifa</div>
+        <div class="Tifa-text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem voluptas, amet suscipit
+          ea doloremque
+          dolorum expedita accusamus, esse alias cum fugiat. Non deleniti earum repellendus laborum cupiditate corporis
+          eaque dignissimos?
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>

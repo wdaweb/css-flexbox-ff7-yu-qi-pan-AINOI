@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,body{
+      margin: 0;
+    }
+
+    .bg{
+      width: 100%;
+      height: 100vh;
+      background: white;
+      position: relative;
+    }
+    .soto{
+    width: 500px; 
+    height: 550px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+
+    .ura{
+      width: 420px;
+      height: 470px;
+      border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    }
+
+.tatebox{
+width: 100%;
+height: 100%;
+      border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+.tate{
+  width: 1px;
+  height: 100%;
+  background: black;
+}
+
+.yokobox{
+  width: 100%;
+height: 100%;
+      border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+  flex-direction: column;
+justify-content: space-between;
+}
+
+.yoko{
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.river{
+  width: 99.6%;
+  height: 11%;
+  border: 1px solid black;
+  background: white;
+  position: absolute;
+  top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.river-chu{
+  width: 40%;
+  height: 99%;
+  border: 1px solid transparent;
+  background:transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 40px;
+  font-style: bold;
+}
+
+.river-han{
+  width: 40%;
+  height: 99%;
+  border: 1px solid transparent;
+  background:transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-size: 40px;
+  font-style: bold;
+}
+
+.marubox-yoko-top{
+  width: 110%;
+height: 110%;
+      border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+
+.marubox-yoko-middle{
+  width: 86.5%;
+height: 65%;
+      border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+
+.marubox-yoko-bottom{
+  width: 110%;
+height: 43%;
+      border: 1px solid transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+
+.maru{
+  width: 45px;
+  height: 45px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 32px;
+  text-align: center;
+}
+
+.poembox{
+  width: 700px; 
+    height:650px;
+    border: 1px solid transparent;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: row;
+justify-content: space-between;
+}
+
+.poemleft{
+width: 50px;
+height: 100%;
+border: 1px solid transparent;
+position: absolute;
+top:-10%;
+left: 0;
+font-size: 30px;
+text-align: center;
+}
+.poemright{
+  width: 50px;
+height: 100%;
+border: 1px solid transparent;
+position: absolute;
+top:-10%;
+right: 0;
+font-size: 30px;
+text-align: center;
+}
+
+.naname-left{
+width: 105px;
+height: 105px;
+background:linear-gradient(45deg,transparent 50%,black 50%,transparent 51% );
+position: absolute;
+top: 0;
+left:37.5%;
+}
+
+.naname-left-bottom{
+width: 105px;
+height: 105px;
+background:linear-gradient(45deg,transparent 50%,black 50%,transparent 51% );
+position: absolute;
+bottom: 0;
+left:37.5%;
+}
+
+.naname-right{
+width: 105px;
+height: 105px;
+background:linear-gradient(135deg,transparent 50%,black 50%,transparent 51% );
+position: absolute;
+top: 0;
+left:37.5%;
+}
+
+.naname-right-bottom{
+width: 105px;
+height: 105px;
+background:linear-gradient(135deg,transparent 50%,black 50%,transparent 51% );
+position: absolute;
+bottom: 0;
+left:37.5%;
+}
+  </style>
+</head>
+<body>
+  <div class="bg">
+    <div class="poembox">
+      <div class="poemleft">棋盤裡 ，車無輪 ，馬無韁 ，叫聲將軍提防提防 。</div>
+      <div class="poemright">圖畫裡 ，龍不吟 ，虎不嘯 ，小小書僮可笑可笑 。</div>
+    </div>
+    <div class="soto">
+      <div class="ura">
+
+        <div class="naname-left"></div>
+        <div class="naname-right"></div>
+        <div class="naname-left-bottom"></div>
+        <div class="naname-right-bottom"></div>
+<div class="tatebox">
+  <div class="tate"></div>
+  <div class="tate"></div>
+  <div class="tate"></div>
+  <div class="tate"></div>
+  <div class="tate"></div>
+  <div class="tate"></div>
+  <div class="tate"></div>
+  <div class="tate"></div>
+  <div class="tate"></div>
+</div>
+
+<div class="yokobox">
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+<div class="yoko"></div>
+</div>
+
+<div class="river">
+  <div class="river-chu">楚河</div>
+  <div class="river-han">漢界</div>
+</div>
+
+
+<div class="marubox-yoko-top">
+  <div class="maru">車</div>
+  <div class="maru">馬</div>
+  <div class="maru">象</div>
+  <div class="maru">士</div>
+  <div class="maru">將</div>
+  <div class="maru">士</div>
+  <div class="maru">象</div>
+  <div class="maru">馬</div>
+  <div class="maru">車</div>
+</div>
+
+<div class="marubox-yoko-middle">
+<div class="maru">包</div>
+<div class="maru">包</div>
+</div>
+
+<div class="marubox-yoko-bottom">
+  <div class="maru">卒</div>
+  <div class="maru">卒</div>
+  <div class="maru">卒</div>
+  <div class="maru">卒</div>
+  <div class="maru">卒</div>
+</div>
+
+
+<div class="marubox-yoko-top" style="align-items: flex-end;">
+  <div class="maru" style="color: red;">俥</div>
+  <div class="maru" style="color: red;">傌</div>
+  <div class="maru" style="color: red;">相</div>
+  <div class="maru" style="color: red;">仕</div>
+  <div class="maru" style="color: red;">帥</div>
+  <div class="maru" style="color: red;">仕</div>
+  <div class="maru" style="color: red;">相</div>
+  <div class="maru" style="color: red;">傌</div>
+  <div class="maru" style="color: red;">俥</div>
+</div>
+
+<div class="marubox-yoko-middle" style="align-items: flex-end;">
+  <div class="maru" style="color: red;">炮</div>
+  <div class="maru" style="color: red;">炮</div>
+  </div>
+
+  <div class="marubox-yoko-bottom" style="align-items: flex-end;">
+    <div class="maru" style="color: red;">兵</div>
+    <div class="maru" style="color: red;">兵</div>
+    <div class="maru" style="color: red;">兵</div>
+    <div class="maru" style="color: red;">兵</div>
+    <div class="maru" style="color: red;">兵</div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
